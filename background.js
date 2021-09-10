@@ -10,3 +10,4 @@ image.src = `images/${chosenImage}`;
 
 // * Then Append
 document.body.appendChild(image);
+// document.body.prepend(image);
