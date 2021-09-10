@@ -82,4 +82,4 @@
 
 ## fetch()
 
-    call the URL
+    call the URL ->  comes with promise
