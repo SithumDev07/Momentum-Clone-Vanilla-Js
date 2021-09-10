@@ -53,3 +53,17 @@
     into,
 
     parsedTodos.forEach(paintTodo);
+
+## How Filter Works
+
+    the function passing in filter should return true, if we want to keep that specific item
+
+    function whichOne(item) {
+        return item !== 3;
+    }
+
+    [1,2,3,4].filter(whichOne);
+
+    So, when the item is 3, function will return false.
+
+    and finally, filter will return a new array.

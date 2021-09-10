@@ -11,6 +11,8 @@ function saveTodos() {
 
 function deletTodo(event) {
   const li = event.target.parentElement;
+  todos = todos.filter((todo) => todo.id !== parseInt(li.id));
+  saveTodos();
   li.remove();
 }
 
@@ -42,10 +44,10 @@ function onSubmitForm(e) {
 
 document.querySelector("#todo-form").addEventListener("submit", onSubmitForm);
 
-const savedTodods = localStorage.getItem(TODOS_KEY);
+const savedTodos = localStorage.getItem(TODOS_KEY);
 
-if (saveTodos !== null) {
-  const parsedTodos = JSON.parse(savedTodods);
+if (savedTodos !== null) {
+  const parsedTodos = JSON.parse(savedTodos);
   todos = parsedTodos;
   parsedTodos.forEach(paintTodo);
 }
