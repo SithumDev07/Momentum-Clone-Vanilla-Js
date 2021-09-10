@@ -11,3 +11,9 @@
 ## Formatting Timer
 
     JavaScript String.padStart() funtion
+
+## Add Image Dynamically
+
+    First create element using document.createElement() function
+    Then set the image source
+    Then append element to the parent using appendChild() funtion
