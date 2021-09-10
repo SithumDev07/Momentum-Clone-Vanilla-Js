@@ -67,3 +67,19 @@
     So, when the item is 3, function will return false.
 
     and finally, filter will return a new array.
+
+## Getting Current Location
+
+    using navigator.geolocation.getCurrentPosition();
+
+    the funtion basically asks for two function,
+    first - the function what want to do if success (The end uer allows to give their geolocation)
+    second = the function what want to do if not success.
+
+## Weather Service
+
+    OpenWeatherApi
+
+## fetch()
+
+    call the URL
