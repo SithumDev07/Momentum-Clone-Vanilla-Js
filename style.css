@@ -1,3 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: "Gilroy", sans-serif;
+}
+
 .hidden {
   display: none;
+}
+
+body {
+  overflow: hidden;
+}
+
+section {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#quote {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#clock {
+  font-size: 6rem;
+}
+
+#todo-form,
+#todo-form input {
+  width: 100%;
+}
+
+#todo-form input {
+  height: 50px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  font-size: 1.5rem;
+  padding: 2px 12px;
+}
+
+#todo-form input:focus {
+  outline: none;
+}
+
+#todo-form input::placeholder {
+  color: white;
+  font-weight: 500;
+}
+
+#weather {
+  position: fixed;
+  top: 0;
+  right: 5px;
+}
+
+.greeting {
+  font-size: 3rem;
+}
+
+.quote-bottom {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.floating-todos {
+  width: 60%;
+  position: absolute;
+  bottom: 10%;
+  height: 30%;
+  left: 50%;
+  transform: translateX(-50%);
 }

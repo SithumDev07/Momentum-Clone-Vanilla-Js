@@ -5,7 +5,7 @@ function getClock() {
   clock.innerText = `${date.getHours().toString().padStart(2, "0")}:${date
     .getMinutes()
     .toString()
-    .padStart(2, "0")}:${date.getSeconds().toString().padStart(2, "0")}`;
+    .padStart(2, "0")}`;
 }
 getClock();
 setInterval(getClock, 1000);
